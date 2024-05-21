@@ -1,0 +1,25 @@
+{
+  "name": "mads.codes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:local": "next start -p 4004",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@pigment-css/react": "^0.0.11",
+    "js-cookie": "^3.0.5",
+    "new-component": "^5.0.2",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@pigment-css/nextjs-plugin": "^0.0.11",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}

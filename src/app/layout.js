@@ -1,4 +1,5 @@
 import "./styles.css";
+import Header from "@/components/Header";
 
 export const metadata = {
   title: "Mads Codes",
@@ -9,6 +10,7 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Header />
         <main>{children}</main>
       </body>
     </html>

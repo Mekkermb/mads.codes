@@ -3,9 +3,9 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <div className="mx-auto max-w-5xl px-8">
-      <header className="flex h-14 items-center justify-between">
-        <Link href="/" className="flex flex-col">
+    <div className="mx-auto mb-8 px-8 py-4">
+      <header className="flex items-center justify-between">
+        <Link href="/" className="flex flex-col leading-none">
           <span className="font-bold uppercase">mads.codes</span>
           <span className="text-xs capitalize opacity-50">webudvikler</span>
         </Link>

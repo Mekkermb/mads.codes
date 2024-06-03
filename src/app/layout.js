@@ -8,10 +8,10 @@ export const metadata = {
 
 function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="antialiased">
       <body>
         <Header />
-        <main>{children}</main>
+        <main className="grid gap-32 md:gap-0">{children}</main>
       </body>
     </html>
   );

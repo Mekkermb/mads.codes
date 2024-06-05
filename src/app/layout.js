@@ -11,7 +11,7 @@ function RootLayout({ children }) {
     <html lang="en" className="antialiased">
       <body>
         <Header />
-        <main className="grid gap-32 md:gap-0">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

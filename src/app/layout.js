@@ -1,5 +1,6 @@
 import "./styles.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Mads Codes",
@@ -10,8 +11,11 @@ function RootLayout({ children }) {
   return (
     <html lang="en" className="antialiased">
       <body>
-        <Header />
-        <main className="container">{children}</main>
+        <div className="isolate">
+          <Header />
+          <main className="container">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

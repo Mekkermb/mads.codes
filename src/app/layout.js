@@ -11,7 +11,7 @@ function RootLayout({ children }) {
     <html lang="en" className="antialiased">
       <body>
         <Header />
-        <main>{children}</main>
+        <main className="container">{children}</main>
       </body>
     </html>
   );

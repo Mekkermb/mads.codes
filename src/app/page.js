@@ -14,12 +14,12 @@ function Home() {
         offset={10}
         endMarker={false}
       >
-        <div className="grid gap-32 md:grid-cols-2 md:gap-0">
-          <section className="col-span-full flex min-h-[calc(100svh-96px)] flex-col items-center gap-48 px-8 text-center md:flex-row md:gap-0">
-            <article className="flex h-full flex-col items-center justify-center">
+        <div className="grid justify-items-center gap-48 md:gap-0 lg:grid-cols-2">
+          <section className="col-span-full mt-20 flex min-h-[calc(100svh-80px-5rem)] flex-col gap-48 text-center lg:flex-row lg:gap-0 lg:pb-20">
+            <article className="">
               <div className="flex flex-col items-center gap-16">
                 <div>
-                  <h1 className="mb-4 text-balance text-center text-4xl font-bold">
+                  <h1 className="mb-4 text-balance text-center text-5xl font-bold">
                     Hej der! <br /> Mit navn er Mads
                   </h1>
                   <p className="text-balance text-center text-2xl">
@@ -35,7 +35,7 @@ function Home() {
               </div>
             </article>
 
-            <article className="flex h-full flex-col items-center justify-center">
+            <article className="place-self-end">
               <div className="flex flex-col items-center justify-center">
                 <Image
                   src="https://8xsca0xnzcvircvx.public.blob.vercel-storage.com/img/mascot-6OGja7b0DIZyo3c85h1627IC2qnHZm.png"

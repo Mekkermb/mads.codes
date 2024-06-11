@@ -5,8 +5,8 @@ import ArcherElementWrapper from "@/components/ArcherElementWrapper";
 function Story() {
   return (
     <>
-      <section className="col-span-full flex flex-col items-center gap-48 text-center md:gap-0">
-        <div className="flex flex-col justify-center gap-16 md:min-h-svh">
+      <section className="col-span-full flex flex-col items-center gap-48 text-center lg:gap-0">
+        <div className="flex flex-col justify-center gap-16 lg:min-h-svh">
           <ArcherElementWrapper
             id="start-dream"
             relations={[
@@ -37,7 +37,7 @@ function Story() {
             </p>
           </ArcherElementWrapper>
         </div>
-        <div className="flex flex-col justify-center gap-16 md:min-h-svh">
+        <div className="flex flex-col justify-center gap-16 lg:min-h-svh">
           <ArcherElementWrapper
             id="first-website"
             relations={[
@@ -69,7 +69,7 @@ function Story() {
             </p>
           </ArcherElementWrapper>
         </div>
-        <div className="flex flex-col justify-center gap-16 md:min-h-svh">
+        <div className="flex flex-col justify-center gap-16 lg:min-h-svh">
           <ArcherElementWrapper
             id="education-development"
             relations={[
@@ -100,7 +100,7 @@ function Story() {
             </p>
           </ArcherElementWrapper>
         </div>
-        <div className="flex flex-col justify-center gap-16 md:min-h-svh">
+        <div className="flex flex-col justify-center gap-16 lg:min-h-svh">
           <ArcherElementWrapper
             id="future-goals"
             relations={[

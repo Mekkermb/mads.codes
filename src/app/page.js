@@ -14,7 +14,7 @@ function Home() {
         offset={10}
         endMarker={false}
       >
-        <div className="grid justify-items-center gap-48 md:gap-0 lg:grid-cols-2">
+        <div className="grid justify-items-center gap-48 lg:grid-cols-2 lg:gap-0">
           <section className="col-span-full mt-20 flex min-h-[calc(100svh-80px-5rem)] flex-col gap-48 text-center lg:flex-row lg:gap-0 lg:pb-20">
             <article className="">
               <div className="flex flex-col items-center gap-16">

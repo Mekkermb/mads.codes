@@ -1,8 +1,10 @@
 import { Analytics } from "@vercel/analytics/react";
 
 import "./styles.css";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { nunitoSans } from "@/constants";
 
 export const metadata = {
   title: "Mads Codes",
@@ -11,13 +13,25 @@ export const metadata = {
 
 function RootLayout({ children }) {
   return (
-    <html lang="en" className="antialiased">
-      <body>
-        <div className="isolate">
+    <html lang="en" className={`
+      antialiased
+      ${nunitoSans.variable}
+    `}>
+      <body className={`
+        bg-background
+        text-text
+      `}>
+        <div className={`isolate`}>
           <Header />
-          <main className="container">{children}</main>
+
+          <main className={`
+            grid
+            gap-y-32
+          `}>{children}</main>
+
           <Footer />
         </div>
+
         <Analytics />
       </body>
     </html>

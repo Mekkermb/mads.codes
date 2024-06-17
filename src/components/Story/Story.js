@@ -5,7 +5,7 @@ import ArcherElementWrapper from "@/components/ArcherElementWrapper";
 function Story() {
   return (
     <>
-      <section className="col-span-full flex flex-col items-center gap-48 text-center lg:gap-0">
+      <section className="container col-span-full flex flex-col items-center gap-48 text-center lg:gap-0">
         <div className="flex flex-col justify-center gap-16 lg:min-h-svh">
           <ArcherElementWrapper
             id="start-dream"

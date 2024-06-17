@@ -4,6 +4,7 @@ import Image from "next/image";
 import Story from "@/components/Story";
 import ArcherContainerWrapper from "@/components/ArcherContainerWrapper";
 import ArcherElementWrapper from "@/components/ArcherElementWrapper";
+import Projects from "@/components/Projects/Projects";
 
 function Home() {
   return (
@@ -15,8 +16,8 @@ function Home() {
         endMarker={false}
       >
         <div className="grid justify-items-center gap-48 lg:grid-cols-2 lg:gap-0">
-          <section className="col-span-full mt-20 flex min-h-[calc(100svh-80px-5rem)] flex-col gap-48 text-center lg:flex-row lg:gap-0 lg:pb-20">
-            <article className="">
+          <section className="container col-span-full mt-20 flex min-h-[calc(100svh-80px-5rem)] flex-col gap-48 text-center lg:flex-row lg:gap-0 lg:pb-20">
+            <article>
               <div className="flex flex-col items-center gap-16">
                 <div>
                   <h1 className="mb-4 text-balance text-center text-5xl font-bold">
@@ -80,6 +81,7 @@ function Home() {
           </section>
 
           <Story />
+          <Projects />
         </div>
       </ArcherContainerWrapper>
     </>

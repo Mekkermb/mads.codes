@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 
 import "./styles.css";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -15,7 +16,7 @@ function RootLayout({ children }) {
       <body>
         <div className="isolate">
           <Header />
-          <main className="container">{children}</main>
+          <main className="">{children}</main>
           <Footer />
         </div>
         <Analytics />

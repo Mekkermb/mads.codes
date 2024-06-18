@@ -4,45 +4,41 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Project = ({ project }) => {
+  const { name, description, illustration } = project; // Destructure the project object
+
   return (
-    <motion.article
-      className="relative h-[100svh] w-[100svw]"
-      layout={true}
-      initial={{
-        backgroundImage:
-          "linear-gradient(to bottom, hsl(0, 0%, 90%), hsl(0, 0%, 70%))",
-      }}
-      whileInView={{
-        backgroundImage:
-          "linear-gradient(to bottom, hsl(0, 0%, 70%), hsl(0, 0%, 50%)",
-      }}
-      transition={{ type: "spring", stiffness: 100, damping: 50 }}
-    >
-      <motion.div
-        className="container flex h-full flex-col items-center justify-center gap-8"
-        layout
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ type: "spring", stiffness: 100, damping: 50, delay: 0.5 }}
-      >
-        <div className="flex flex-col gap-4 text-center">
-          <h2 className="bg-white text-4xl">{project.name}</h2>
-          <p className="">{project.description}</p>
+    <article className="lg:min-h-svh">
+      <div className="grid gap-16 lg:grid-cols-2 lg:grid-rows-2">
+        <div className="flex flex-col">
+          {illustration.map((image, index) => (
+            <picture
+              key={index}
+              className="relative bg-gray-400 px-12 py-8 lg:row-span-full"
+            >
+              <Image src={image} fill alt={description} />
+            </picture>
+          ))}
+          <motion.h2
+            className="bg-neutral-400 px-4 py-2 text-4xl font-thin italic"
+            layout
+            initial={{ y: "10px", scale: 0.9 }}
+            whileInView={{ y: "0px", scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 20,
+              restDelta: 0.001,
+            }}
+          >
+            {name}
+          </motion.h2>
+          <p className="">{description}</p>
         </div>
-        <Image
-          src={project.illustration}
-          width={2880}
-          height={1620}
-          alt={project.description}
-        />
         <div className="flex w-full flex-col">
           <p>Teknologier</p>
-          <div>
-            <p>{project.tech_used}</p>
-          </div>
         </div>
-      </motion.div>
-    </motion.article>
+      </div>
+    </article>
   );
 };
 

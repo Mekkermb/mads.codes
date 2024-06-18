@@ -36,7 +36,7 @@ function Home() {
               </div>
             </article>
 
-            <article className="place-self-end">
+            <article className="lg:place-self-end">
               <div className="flex flex-col items-center justify-center">
                 <Image
                   src="https://8xsca0xnzcvircvx.public.blob.vercel-storage.com/img/mascot-6OGja7b0DIZyo3c85h1627IC2qnHZm.png"

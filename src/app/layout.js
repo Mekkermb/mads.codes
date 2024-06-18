@@ -16,7 +16,7 @@ function RootLayout({ children }) {
       <body>
         <div className="isolate">
           <Header />
-          <main className="">{children}</main>
+          <main>{children}</main>
           <Footer />
         </div>
         <Analytics />

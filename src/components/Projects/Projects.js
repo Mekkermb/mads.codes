@@ -4,7 +4,6 @@ import Project from "@/components/Project";
 
 async function Projects() {
   const { rows } = await DAL.query.getProjects();
-  console.log(rows);
 
   return (
     <section className="container col-span-full">

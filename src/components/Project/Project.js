@@ -8,21 +8,23 @@ const Project = ({ project }) => {
   const { name, description, illustrations, properties } = project; // Destructure the project object
 
   return (
-    <article className="flex flex-col gap-8 lg:min-h-svh">
-      <div
-        className={`flex h-auto w-full items-center bg-${properties.color} px-8 py-4`}
-      >
-        {illustrations.map((illustration, index) => (
-          <picture key={index} className="">
-            <Image
-              className={`w-full ${index === 0 && "translate-x-1/3"}`}
-              src={illustration}
-              width={illustration.width}
-              height={illustration.height}
-              alt={description}
-            />
-          </picture>
-        ))}
+    <article className="flex flex-col gap-32">
+      <div className={`relative h-40 w-full bg-${properties.color}`}>
+        <div className="absolute inset-0 flex items-center justify-center px-8 py-4">
+          {illustrations.map((illustration, index) => (
+            <picture
+              key={index}
+              className={`relative ${index === 0 ? "z-10 w-32 translate-x-6" : "w-64 -translate-x-6"}`}
+            >
+              <Image
+                src={illustration}
+                width={illustration.width}
+                height={illustration.height}
+                alt={description}
+              />
+            </picture>
+          ))}
+        </div>
       </div>
 
       <div className="flex flex-col items-start">

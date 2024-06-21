@@ -5,27 +5,29 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Project = ({ project }) => {
-  const { name, description, illustration, properties } = project; // Destructure the project object
+  const { name, description, illustrations, properties } = project; // Destructure the project object
 
   return (
-    <article className="grid gap-16 lg:min-h-svh">
+    <article className="flex flex-col gap-8 lg:min-h-svh">
       <div
-        className={`flex items-center justify-center bg-${properties.color} px-24 py-12`}
+        className={`flex h-auto w-full items-center bg-${properties.color} px-8 py-4`}
       >
-        {illustration.map((img, index) => (
-          <picture key={index}>
+        {illustrations.map((illustration, index) => (
+          <picture key={index} className="">
             <Image
-              src={img}
-              width={img.width}
-              height={img.height}
+              className={`w-full ${index === 0 && "translate-x-1/3"}`}
+              src={illustration}
+              width={illustration.width}
+              height={illustration.height}
               alt={description}
             />
           </picture>
         ))}
       </div>
-      <div className="flex flex-col">
+
+      <div className="flex flex-col items-start">
         <motion.h2
-          className="bg-neutral-400 px-4 py-2 text-4xl font-thin italic"
+          className="text-4xl font-bold"
           layout
           initial={{ y: "10px", scale: 0.9 }}
           whileInView={{ y: "0px", scale: 1 }}
@@ -39,9 +41,9 @@ const Project = ({ project }) => {
           {name}
         </motion.h2>
         <p className="">{description}</p>
-      </div>
-      <div className="flex w-full flex-col">
-        <Link href={`./${name}`}>Se projekt</Link>
+        <Link className="font-bold" href={`./${name}`}>
+          Se projekt
+        </Link>
       </div>
     </article>
   );

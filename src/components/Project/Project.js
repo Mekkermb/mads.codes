@@ -47,6 +47,7 @@ const Project = ({ project }) => {
         </motion.h2>
         <div className="inline-flex h-full flex-col">
           <p>{description}</p>
+          {/* TODO: Refactor to a LinkButton Component */}
           <div className={`mt-auto flex ${isHovering ? "gap-2" : "gap-0"}`}>
             <Link
               className={`font-bold uppercase`}
@@ -56,7 +57,6 @@ const Project = ({ project }) => {
             >
               Se projekt
             </Link>
-            {/* TODO: Refactor to a LinkButton Component */}
             <motion.span
               className="select-none"
               layout

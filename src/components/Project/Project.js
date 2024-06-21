@@ -3,9 +3,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronRight } from "react-feather";
 
 const Project = ({ project }) => {
   const { name, description, illustrations, properties } = project; // Destructure the project object
+
+  const [isHovering, setIsHovering] = React.useState(false);
 
   return (
     <article className="flex flex-col gap-32">
@@ -27,12 +30,12 @@ const Project = ({ project }) => {
         </div>
       </div>
 
-      <div className="flex flex-col items-start">
+      <div className="flex h-52 flex-col items-start gap-4">
         <motion.h2
           className="text-4xl font-bold"
           layout
-          initial={{ y: "10px", scale: 0.9 }}
-          whileInView={{ y: "0px", scale: 1 }}
+          initial={{ y: "10px" }}
+          whileInView={{ y: "0px" }}
           transition={{
             type: "spring",
             stiffness: 100,
@@ -42,10 +45,31 @@ const Project = ({ project }) => {
         >
           {name}
         </motion.h2>
-        <p className="">{description}</p>
-        <Link className="font-bold" href={`./${name}`}>
-          Se projekt
-        </Link>
+        <div className="inline-flex h-full flex-col">
+          <p>{description}</p>
+          <div className={`mt-auto flex ${isHovering ? "gap-2" : "gap-0"}`}>
+            <Link
+              className={`font-bold uppercase`}
+              href={`./${name}`}
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
+            >
+              Se projekt
+            </Link>
+            {/* TODO: Refactor to a LinkButton Component */}
+            <motion.span
+              className="select-none"
+              layout
+              transition={{
+                type: "spring",
+                stiffness: 500,
+                damping: 40,
+              }}
+            >
+              <ChevronRight />
+            </motion.span>
+          </div>
+        </div>
       </div>
     </article>
   );

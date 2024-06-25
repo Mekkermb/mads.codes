@@ -7,7 +7,8 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Mads Codes",
-  description: "A site about my hobbies and projects",
+  description:
+    "A site about my hobbies and projects",
 };
 
 function RootLayout({ children }) {

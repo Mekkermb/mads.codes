@@ -7,7 +7,13 @@ async function Projects() {
 
   return (
     <section className={`
-      container col-span-full grid grid-cols-1 gap-48 md:grid-cols-2 md:gap-16
+      container
+      col-span-full
+      grid
+      grid-cols-1
+      gap-48
+      md:grid-cols-2
+      md:gap-16
     `}
     >
       {rows.map((project) => (

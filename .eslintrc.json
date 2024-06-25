@@ -1,7 +1,8 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:readable-tailwind/warning"
+    "plugin:readable-tailwind/warning",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -9,9 +10,7 @@
     },
     "ecmaVersion": "latest"
   },
-  "plugins": [
-    "readable-tailwind"
-  ],
+  "plugins": ["readable-tailwind"],
   "rules": {
     "readable-tailwind/multiline": [
       "warn",

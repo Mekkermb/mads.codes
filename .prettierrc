@@ -6,5 +6,5 @@
   ],
   "singleAttributePerLine": true,
   "printWidth": 50,
-  "endingPosition": "relative"
+  "endingPosition": "absolute-with-indent"
 }

@@ -16,20 +16,14 @@ module.exports = {
     "readable-tailwind/multiline": [
       "warn",
       {
-        classesPerLine: 1,
-        group: "emptyLine",
-      },
-    ],
-    "@stylistic/jsx-max-props-per-line": [
-      "warn",
-      {
-        maximum: 1,
-        when: "always",
+        group: "never",
       },
     ],
     "@stylistic/jsx-newline": [
       "warn",
       { prevent: true, allowMultilines: true },
     ],
+    "@stylistic/jsx-first-prop-new-line": ["warn", "never"],
+    "@stylistic/jsx-indent-props": [2, 2],
   },
 };

@@ -16,33 +16,59 @@ function Home() {
         endMarker={false}
       >
         <div
-          className="grid justify-items-center
-            gap-48 lg:grid-cols-2 lg:gap-0"
+          className={`
+            grid
+            justify-items-center
+            gap-48
+
+            lg:grid-cols-2
+            lg:gap-0
+          `}
         >
           <section
-            className="container col-span-full
-              mt-20 flex
+            className={`
+              container
+              col-span-full
+              mt-20
+              flex
               min-h-[calc(100svh-80px-5rem)]
-              flex-col gap-48 text-center
-              lg:flex-row lg:gap-0 lg:pb-20"
+              flex-col
+              gap-48
+              text-center
+
+              lg:flex-row
+              lg:gap-0
+              lg:pb-20
+            `}
           >
             <article>
               <div
-                className="flex flex-col
-                  items-center gap-16"
+                className={`
+                  flex
+                  flex-col
+                  items-center
+                  gap-16
+                `}
               >
                 <div>
                   <h1
-                    className="mb-4 text-balance
-                      text-center text-5xl
-                      font-bold"
+                    className={`
+                      mb-4
+                      text-balance
+                      text-center
+                      text-5xl
+                      font-bold
+                    `}
                   >
                     Hej der! <br /> Mit navn er
                     Mads
                   </h1>
                   <p
-                    className="text-balance
-                      text-center text-2xl"
+                    className={`
+                      text-balance
+                      text-center
+                      text-2xl
+                    `}
                   >
                     Jeg er en passioneret
                     introvert, der godt kan lide
@@ -51,10 +77,14 @@ function Home() {
                 </div>
                 <div>
                   <div
-                    className="flex aspect-video
-                      w-72 items-center
+                    className={`
+                      flex
+                      aspect-video
+                      w-72
+                      items-center
                       justify-center
-                      bg-neutral-400"
+                      bg-neutral-400
+                    `}
                   >
                     <p>Nyeste projekt</p>
                   </div>
@@ -64,8 +94,12 @@ function Home() {
 
             <article className="lg:place-self-end">
               <div
-                className="flex flex-col
-                  items-center justify-center"
+                className={`
+                  flex
+                  flex-col
+                  items-center
+                  justify-center
+                `}
               >
                 <Image
                   src="https://8xsca0xnzcvircvx.public.blob.vercel-storage.com/img/mascot-6OGja7b0DIZyo3c85h1627IC2qnHZm.png"
@@ -87,9 +121,17 @@ function Home() {
                   ]}
                 >
                   <h2
-                    className="mx-auto mb-16 w-fit
-                      bg-neutral-400 px-4 py-2
-                      text-5xl font-thin italic"
+                    className={`
+                      mx-auto
+                      mb-16
+                      w-fit
+                      bg-neutral-400
+                      px-4
+                      py-2
+                      text-5xl
+                      font-thin
+                      italic
+                    `}
                   >
                     Introduktion
                   </h2>

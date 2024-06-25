@@ -6,13 +6,27 @@ function Story() {
   return (
     <>
       <section
-        className="container col-span-full flex
-          flex-col items-center gap-48 text-center
-          lg:gap-0"
+        className={`
+          container
+          col-span-full
+          flex
+          flex-col
+          items-center
+          gap-48
+          text-center
+
+          lg:gap-0
+        `}
       >
         <div
-          className="flex flex-col justify-center
-            gap-16 lg:min-h-svh"
+          className={`
+            flex
+            flex-col
+            justify-center
+            gap-16
+
+            lg:min-h-svh
+          `}
         >
           <ArcherElementWrapper
             id="start-dream"
@@ -25,9 +39,16 @@ function Story() {
             ]}
           >
             <h2
-              className="mx-auto w-fit
-                bg-neutral-400 px-4 py-2 text-5xl
-                font-thin italic"
+              className={`
+                mx-auto
+                w-fit
+                bg-neutral-400
+                px-4
+                py-2
+                text-5xl
+                font-thin
+                italic
+              `}
             >
               Starten på en drøm
             </h2>
@@ -51,8 +72,14 @@ function Story() {
           </ArcherElementWrapper>
         </div>
         <div
-          className="flex flex-col justify-center
-            gap-16 lg:min-h-svh"
+          className={`
+            flex
+            flex-col
+            justify-center
+            gap-16
+
+            lg:min-h-svh
+          `}
         >
           <ArcherElementWrapper
             id="first-website"
@@ -65,9 +92,16 @@ function Story() {
             ]}
           >
             <h2
-              className="mx-auto w-fit
-                bg-neutral-400 px-4 py-2 text-5xl
-                font-thin italic"
+              className={`
+                mx-auto
+                w-fit
+                bg-neutral-400
+                px-4
+                py-2
+                text-5xl
+                font-thin
+                italic
+              `}
             >
               Den første hjemmeside
             </h2>
@@ -92,8 +126,14 @@ function Story() {
           </ArcherElementWrapper>
         </div>
         <div
-          className="flex flex-col justify-center
-            gap-16 lg:min-h-svh"
+          className={`
+            flex
+            flex-col
+            justify-center
+            gap-16
+
+            lg:min-h-svh
+          `}
         >
           <ArcherElementWrapper
             id="education-development"
@@ -107,9 +147,16 @@ function Story() {
             ]}
           >
             <h2
-              className="mx-auto w-fit
-                bg-neutral-400 px-4 py-2 text-5xl
-                font-thin italic"
+              className={`
+                mx-auto
+                w-fit
+                bg-neutral-400
+                px-4
+                py-2
+                text-5xl
+                font-thin
+                italic
+              `}
             >
               Uddannelse og udvikling
             </h2>
@@ -133,8 +180,14 @@ function Story() {
           </ArcherElementWrapper>
         </div>
         <div
-          className="flex flex-col justify-center
-            gap-16 lg:min-h-svh"
+          className={`
+            flex
+            flex-col
+            justify-center
+            gap-16
+
+            lg:min-h-svh
+          `}
         >
           <ArcherElementWrapper
             id="future-goals"
@@ -147,9 +200,16 @@ function Story() {
             ]}
           >
             <h2
-              className="mx-auto w-fit
-                bg-neutral-400 px-4 py-2 text-5xl
-                font-thin italic"
+              className={`
+                mx-auto
+                w-fit
+                bg-neutral-400
+                px-4
+                py-2
+                text-5xl
+                font-thin
+                italic
+              `}
             >
               Fremtidige mål
             </h2>

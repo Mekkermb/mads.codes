@@ -5,6 +5,6 @@
     "prettier-plugin-merge"
   ],
   "singleAttributePerLine": true,
-  "printWidth": 50,
+  "printWidth": 80,
   "endingPosition": "absolute-with-indent"
 }

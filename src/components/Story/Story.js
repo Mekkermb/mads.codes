@@ -5,29 +5,12 @@ import ArcherElementWrapper from "@/components/ArcherElementWrapper";
 function Story() {
   return (
     <>
-      <section
-        className={`
-          container
-          col-span-full
-          flex
-          flex-col
-          items-center
-          gap-48
-          text-center
-
-          lg:gap-0
-        `}
+      <section className={`
+        container col-span-full flex flex-col items-center gap-48 text-center lg:gap-0
+      `}
       >
-        <div className={`
-          flex
-          flex-col
-          justify-center
-          gap-16
-
-          lg:min-h-svh
-        `}>
-          <ArcherElementWrapper
-            id="start-dream"
+        <div className={`flex flex-col justify-center gap-16 lg:min-h-svh`}>
+          <ArcherElementWrapper id="start-dream"
             relations={[
               {
                 targetId: "start-dream-text",
@@ -36,24 +19,15 @@ function Story() {
               },
             ]}
           >
-            <h2
-              className={`
-                mx-auto
-                w-fit
-                bg-neutral-400
-                px-4
-                py-2
-                text-5xl
-                font-thin
-                italic
-              `}
+            <h2 className={`
+              mx-auto w-fit bg-neutral-400 px-4 py-2 text-5xl font-thin italic
+            `}
             >
               Starten på en drøm
             </h2>
           </ArcherElementWrapper>
 
-          <ArcherElementWrapper
-            id="start-dream-text"
+          <ArcherElementWrapper id="start-dream-text"
             relations={[
               {
                 targetId: "first-website",
@@ -69,16 +43,8 @@ function Story() {
           </ArcherElementWrapper>
         </div>
 
-        <div className={`
-          flex
-          flex-col
-          justify-center
-          gap-16
-
-          lg:min-h-svh
-        `}>
-          <ArcherElementWrapper
-            id="first-website"
+        <div className={`flex flex-col justify-center gap-16 lg:min-h-svh`}>
+          <ArcherElementWrapper id="first-website"
             relations={[
               {
                 targetId: "first-website-text",
@@ -87,24 +53,15 @@ function Story() {
               },
             ]}
           >
-            <h2
-              className={`
-                mx-auto
-                w-fit
-                bg-neutral-400
-                px-4
-                py-2
-                text-5xl
-                font-thin
-                italic
-              `}
+            <h2 className={`
+              mx-auto w-fit bg-neutral-400 px-4 py-2 text-5xl font-thin italic
+            `}
             >
               Den første hjemmeside
             </h2>
           </ArcherElementWrapper>
 
-          <ArcherElementWrapper
-            id="first-website-text"
+          <ArcherElementWrapper id="first-website-text"
             relations={[
               {
                 targetId: "education-development",
@@ -121,16 +78,8 @@ function Story() {
           </ArcherElementWrapper>
         </div>
 
-        <div className={`
-          flex
-          flex-col
-          justify-center
-          gap-16
-
-          lg:min-h-svh
-        `}>
-          <ArcherElementWrapper
-            id="education-development"
+        <div className={`flex flex-col justify-center gap-16 lg:min-h-svh`}>
+          <ArcherElementWrapper id="education-development"
             relations={[
               {
                 targetId: "education-development-text",
@@ -139,24 +88,15 @@ function Story() {
               },
             ]}
           >
-            <h2
-              className={`
-                mx-auto
-                w-fit
-                bg-neutral-400
-                px-4
-                py-2
-                text-5xl
-                font-thin
-                italic
-              `}
+            <h2 className={`
+              mx-auto w-fit bg-neutral-400 px-4 py-2 text-5xl font-thin italic
+            `}
             >
               Uddannelse og udvikling
             </h2>
           </ArcherElementWrapper>
 
-          <ArcherElementWrapper
-            id="education-development-text"
+          <ArcherElementWrapper id="education-development-text"
             relations={[
               {
                 targetId: "future-goals",
@@ -172,16 +112,8 @@ function Story() {
           </ArcherElementWrapper>
         </div>
 
-        <div className={`
-          flex
-          flex-col
-          justify-center
-          gap-16
-
-          lg:min-h-svh
-        `}>
-          <ArcherElementWrapper
-            id="future-goals"
+        <div className={`flex flex-col justify-center gap-16 lg:min-h-svh`}>
+          <ArcherElementWrapper id="future-goals"
             relations={[
               {
                 targetId: "future-goals-text",
@@ -190,17 +122,9 @@ function Story() {
               },
             ]}
           >
-            <h2
-              className={`
-                mx-auto
-                w-fit
-                bg-neutral-400
-                px-4
-                py-2
-                text-5xl
-                font-thin
-                italic
-              `}
+            <h2 className={`
+              mx-auto w-fit bg-neutral-400 px-4 py-2 text-5xl font-thin italic
+            `}
             >
               Fremtidige mål
             </h2>

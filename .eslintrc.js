@@ -16,7 +16,8 @@ module.exports = {
     "readable-tailwind/multiline": [
       "warn",
       {
-        group: "never",
+        group: "newLine",
+        classesPerLine: 1,
       },
     ],
     "@stylistic/jsx-newline": [

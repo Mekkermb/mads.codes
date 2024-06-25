@@ -6,7 +6,8 @@ import Link from "next/link";
 import { ChevronRight } from "react-feather";
 
 const Project = ({ project }) => {
-  const { name, description, illustrations, properties } = project; // Destructure the project object
+  const { name, description, illustrations, properties, live_project_link } =
+    project; // Destructure the project object
 
   const [isHovering, setIsHovering] = React.useState(false);
 
@@ -97,6 +98,7 @@ const Project = ({ project }) => {
           flex-col
         `}>
           <p>{description}</p>
+
           {/* TODO: Refactor to a LinkButton Component */}
           <div className={`
             mt-auto
@@ -109,7 +111,8 @@ const Project = ({ project }) => {
                 font-bold
                 uppercase
               `}
-              href={`./${name}`}
+              target="_blank"
+              href={live_project_link}
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
             >

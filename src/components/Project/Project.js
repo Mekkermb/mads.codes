@@ -6,15 +6,9 @@ import Link from "next/link";
 import { ChevronRight } from "react-feather";
 
 const Project = ({ project }) => {
-  const {
-    name,
-    description,
-    illustrations,
-    properties
-  } = project; // Destructure the project object
+  const { name, description, illustrations, properties } = project; // Destructure the project object
 
-  const [isHovering, setIsHovering] =
-    React.useState(false);
+  const [isHovering, setIsHovering] = React.useState(false);
 
   return (
     <article className={`
@@ -22,15 +16,13 @@ const Project = ({ project }) => {
       flex-col
       gap-32
     `}>
-      <div
-        className={`
-          relative
-          h-40
-          w-full
+      <div className={`
+        relative
+        h-40
+        w-full
 
-          bg-${properties.color}
-        `}
-      >
+        bg-${properties.color}
+      `}>
         <div
           className={`
             absolute
@@ -42,48 +34,42 @@ const Project = ({ project }) => {
             py-4
           `}
         >
-          {illustrations.map(
-            (illustration, index) => (
-              <picture
-                key={index}
-                className={`
-                  relative
+          {illustrations.map((illustration, index) => (
+            <picture
+              key={index}
+              className={`
+                relative
 
-                  ${
-                  index === 0
-                    ? `
-                      z-10
-                      w-32
-                      translate-x-6
-                    `
-                    : `
-                      w-64
-                      -translate-x-6
-                    `
-                }
-                `}
-              >
-                <Image
-                  src={illustration}
-                  width={illustration.width}
-                  height={illustration.height}
-                  alt={description}
-                />
-              </picture>
-            )
-          )}
+                ${
+                index === 0 ? `
+                  z-10
+                  w-32
+                  translate-x-6
+                ` : `
+                  w-64
+                  -translate-x-6
+                `
+              }
+              `}
+            >
+              <Image
+                src={illustration}
+                width={illustration.width}
+                height={illustration.height}
+                alt={description}
+              />
+            </picture>
+          ))}
         </div>
       </div>
 
-      <div
-        className={`
-          flex
-          h-52
-          flex-col
-          items-start
-          gap-4
-        `}
-      >
+      <div className={`
+        flex
+        h-52
+        flex-col
+        items-start
+        gap-4
+      `}>
         <motion.h2
           className={`
             text-4xl
@@ -91,49 +77,41 @@ const Project = ({ project }) => {
           `}
           layout
           initial={{
-            y: "10px"
+            y: "10px",
           }}
           whileInView={{
-            y: "0px"
+            y: "0px",
           }}
           transition={{
             type: "spring",
             stiffness: 100,
             damping: 20,
-            restDelta: 0.001
+            restDelta: 0.001,
           }}
         >
           {name}
         </motion.h2>
-        <div
-          className={`
-            inline-flex
-            h-full
-            flex-col
-          `}
-        >
+        <div className={`
+          inline-flex
+          h-full
+          flex-col
+        `}>
           <p>{description}</p>
           {/* TODO: Refactor to a LinkButton Component */}
-          <div
-            className={`
-              mt-auto
-              flex
+          <div className={`
+            mt-auto
+            flex
 
-              ${isHovering ? "gap-2" : "gap-0"}
-            `}
-          >
+            ${isHovering ? "gap-2" : "gap-0"}
+          `}>
             <Link
               className={`
                 font-bold
                 uppercase
               `}
               href={`./${name}`}
-              onMouseEnter={() =>
-                setIsHovering(true)
-              }
-              onMouseLeave={() =>
-                setIsHovering(false)
-              }
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
             >
               Se projekt
             </Link>
@@ -143,7 +121,7 @@ const Project = ({ project }) => {
               transition={{
                 type: "spring",
                 stiffness: 500,
-                damping: 40
+                damping: 40,
               }}
             >
               <ChevronRight />

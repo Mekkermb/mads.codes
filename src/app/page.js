@@ -42,14 +42,12 @@ function Home() {
             `}
           >
             <article>
-              <div
-                className={`
-                  flex
-                  flex-col
-                  items-center
-                  gap-16
-                `}
-              >
+              <div className={`
+                flex
+                flex-col
+                items-center
+                gap-16
+              `}>
                 <div>
                   <h1
                     className={`
@@ -60,19 +58,15 @@ function Home() {
                       font-bold
                     `}
                   >
-                    Hej der! <br /> Mit navn er
-                    Mads
+                    Hej der! <br /> Mit navn er Mads
                   </h1>
-                  <p
-                    className={`
-                      text-balance
-                      text-center
-                      text-2xl
-                    `}
-                  >
-                    Jeg er en passioneret
-                    introvert, der godt kan lide
-                    at skabe ting med kode
+                  <p className={`
+                    text-balance
+                    text-center
+                    text-2xl
+                  `}>
+                    Jeg er en passioneret introvert, der godt kan lide at skabe
+                    ting med kode
                   </p>
                 </div>
                 <div>
@@ -93,14 +87,12 @@ function Home() {
             </article>
 
             <article className="lg:place-self-end">
-              <div
-                className={`
-                  flex
-                  flex-col
-                  items-center
-                  justify-center
-                `}
-              >
+              <div className={`
+                flex
+                flex-col
+                items-center
+                justify-center
+              `}>
                 <Image
                   src="https://8xsca0xnzcvircvx.public.blob.vercel-storage.com/img/mascot-6OGja7b0DIZyo3c85h1627IC2qnHZm.png"
                   alt="Billede af min mascot"
@@ -147,9 +139,8 @@ function Home() {
                   ]}
                 >
                   <p className="text-2xl">
-                    Min første oplevelse med
-                    kodning var midt i min
-                    IT-supporter praktikforløb.
+                    Min første oplevelse med kodning var midt i min IT-supporter
+                    praktikforløb.
                   </p>
                 </ArcherElementWrapper>
               </div>

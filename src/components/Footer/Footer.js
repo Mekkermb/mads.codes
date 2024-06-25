@@ -16,15 +16,13 @@ function Footer() {
           md:flex-row
         `}
       >
-        <div
-          className={`
-            flex
-            flex-col
-            justify-between
+        <div className={`
+          flex
+          flex-col
+          justify-between
 
-            md:items-start
-          `}
-        >
+          md:items-start
+        `}>
           <Link
             href="/"
             className={`
@@ -41,48 +39,35 @@ function Footer() {
             <span className={`
               font-bold
               uppercase
-            `}>
-              mads.codes
-            </span>
-            <span
-              className={`
-                text-xs
-                capitalize
-                opacity-50
-              `}
-            >
-              webudvikler
-            </span>
-          </Link>
-          <p
-            className={`
-              none
-              hidden
+            `}>mads.codes</span>
+            <span className={`
               text-xs
+              capitalize
               opacity-50
+            `}>webudvikler</span>
+          </Link>
+          <p className={`
+            none
+            hidden
+            text-xs
+            opacity-50
 
-              md:block
-            `}
-          >
-            © 2024-present Mads Lundsby Bisgaard.
-            All Rights Reserved.
+            md:block
+          `}>
+            © 2024-present Mads Lundsby Bisgaard. All Rights Reserved.
           </p>
         </div>
 
-        <div
-          className={`
-            flex
-            justify-around
-            text-sm
-          `}
-        >
+        <div className={`
+          flex
+          justify-around
+          text-sm
+        `}>
           <div className="md:ml-24">
             <p className={`
               pt-2
               opacity-50
-            `}>
-              Projekter
-            </p>
+            `}>Projekter</p>
             <div
               className={`
                 grid
@@ -111,17 +96,13 @@ function Footer() {
             <p className={`
               pt-2
               opacity-50
+            `}>Links</p>
+            <div className={`
+              grid
+              w-[6rem]
+              grid-cols-1
+              pt-3
             `}>
-              Links
-            </p>
-            <div
-              className={`
-                grid
-                w-[6rem]
-                grid-cols-1
-                pt-3
-              `}
-            >
               <div className="flex">
                 <Link
                   href="https://www.linkedin.com/in/mads-lundsby-bisgaard/"
@@ -133,18 +114,15 @@ function Footer() {
             </div>
           </div>
         </div>
-        <p
-          className={`
-            pt-12
-            text-center
-            text-xs
-            opacity-50
+        <p className={`
+          pt-12
+          text-center
+          text-xs
+          opacity-50
 
-            md:hidden
-          `}
-        >
-          © 2024-present Mads Lundsby Bisgaard.
-          All Rights Reserved.
+          md:hidden
+        `}>
+          © 2024-present Mads Lundsby Bisgaard. All Rights Reserved.
         </p>
       </div>
     </footer>

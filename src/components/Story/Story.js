@@ -18,16 +18,14 @@ function Story() {
           lg:gap-0
         `}
       >
-        <div
-          className={`
-            flex
-            flex-col
-            justify-center
-            gap-16
+        <div className={`
+          flex
+          flex-col
+          justify-center
+          gap-16
 
-            lg:min-h-svh
-          `}
-        >
+          lg:min-h-svh
+        `}>
           <ArcherElementWrapper
             id="start-dream"
             relations={[
@@ -64,23 +62,19 @@ function Story() {
             ]}
           >
             <p className="text-2xl">
-              Jeg havde tid i overskud og tænkte
-              derfor på at starte på en drøm, jeg
-              længe havde haft: nemlig at kode min
-              egen hjemmeside!
+              Jeg havde tid i overskud og tænkte derfor på at starte på en drøm,
+              jeg længe havde haft: nemlig at kode min egen hjemmeside!
             </p>
           </ArcherElementWrapper>
         </div>
-        <div
-          className={`
-            flex
-            flex-col
-            justify-center
-            gap-16
+        <div className={`
+          flex
+          flex-col
+          justify-center
+          gap-16
 
-            lg:min-h-svh
-          `}
-        >
+          lg:min-h-svh
+        `}>
           <ArcherElementWrapper
             id="first-website"
             relations={[
@@ -117,30 +111,25 @@ function Story() {
             ]}
           >
             <p className="text-2xl">
-              Den blev ikke noget exceptionelt,
-              men jeg var stolt af den, for nu
-              havde jeg et sted, hvor jeg kunne
-              vise alle mine interesser og sjove
-              eksperimenter, jeg var i gang med.
+              Den blev ikke noget exceptionelt, men jeg var stolt af den, for nu
+              havde jeg et sted, hvor jeg kunne vise alle mine interesser og
+              sjove eksperimenter, jeg var i gang med.
             </p>
           </ArcherElementWrapper>
         </div>
-        <div
-          className={`
-            flex
-            flex-col
-            justify-center
-            gap-16
+        <div className={`
+          flex
+          flex-col
+          justify-center
+          gap-16
 
-            lg:min-h-svh
-          `}
-        >
+          lg:min-h-svh
+        `}>
           <ArcherElementWrapper
             id="education-development"
             relations={[
               {
-                targetId:
-                  "education-development-text",
+                targetId: "education-development-text",
                 targetAnchor: "top",
                 sourceAnchor: "bottom",
               },
@@ -172,23 +161,19 @@ function Story() {
             ]}
           >
             <p className="text-2xl">
-              Siden da har jeg taget uddannelsen
-              som webudvikler og fortsat med at
-              forbedre mine færdigheder og lære
-              nye teknologier.
+              Siden da har jeg taget uddannelsen som webudvikler og fortsat med
+              at forbedre mine færdigheder og lære nye teknologier.
             </p>
           </ArcherElementWrapper>
         </div>
-        <div
-          className={`
-            flex
-            flex-col
-            justify-center
-            gap-16
+        <div className={`
+          flex
+          flex-col
+          justify-center
+          gap-16
 
-            lg:min-h-svh
-          `}
-        >
+          lg:min-h-svh
+        `}>
           <ArcherElementWrapper
             id="future-goals"
             relations={[
@@ -216,10 +201,8 @@ function Story() {
           </ArcherElementWrapper>
           <ArcherElementWrapper id="future-goals-text">
             <p className="text-2xl">
-              Jeg leder nu efter en
-              fuldtidsstilling eller praktikplads,
-              hvor jeg kan hjælpe en virksomhed
-              med at få deres mål til nye højder!
+              Jeg leder nu efter en fuldtidsstilling eller praktikplads, hvor
+              jeg kan hjælpe en virksomhed med at få deres mål til nye højder!
             </p>
           </ArcherElementWrapper>
         </div>

@@ -92,6 +92,7 @@ const Project = ({ project }) => {
         >
           {name}
         </motion.h2>
+
         <div className={`
           inline-flex
           h-full
@@ -118,6 +119,7 @@ const Project = ({ project }) => {
             >
               Se projekt
             </Link>
+
             <motion.span
               className="select-none"
               layout

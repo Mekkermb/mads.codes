@@ -51,6 +51,7 @@ function Story() {
               Starten på en drøm
             </h2>
           </ArcherElementWrapper>
+
           <ArcherElementWrapper
             id="start-dream-text"
             relations={[
@@ -67,6 +68,7 @@ function Story() {
             </p>
           </ArcherElementWrapper>
         </div>
+
         <div className={`
           flex
           flex-col
@@ -100,6 +102,7 @@ function Story() {
               Den første hjemmeside
             </h2>
           </ArcherElementWrapper>
+
           <ArcherElementWrapper
             id="first-website-text"
             relations={[
@@ -117,6 +120,7 @@ function Story() {
             </p>
           </ArcherElementWrapper>
         </div>
+
         <div className={`
           flex
           flex-col
@@ -150,6 +154,7 @@ function Story() {
               Uddannelse og udvikling
             </h2>
           </ArcherElementWrapper>
+
           <ArcherElementWrapper
             id="education-development-text"
             relations={[
@@ -166,6 +171,7 @@ function Story() {
             </p>
           </ArcherElementWrapper>
         </div>
+
         <div className={`
           flex
           flex-col
@@ -199,6 +205,7 @@ function Story() {
               Fremtidige mål
             </h2>
           </ArcherElementWrapper>
+
           <ArcherElementWrapper id="future-goals-text">
             <p className="text-2xl">
               Jeg leder nu efter en fuldtidsstilling eller praktikplads, hvor

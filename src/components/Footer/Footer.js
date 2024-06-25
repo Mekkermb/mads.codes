@@ -40,12 +40,14 @@ function Footer() {
               font-bold
               uppercase
             `}>mads.codes</span>
+
             <span className={`
               text-xs
               capitalize
               opacity-50
             `}>webudvikler</span>
           </Link>
+
           <p className={`
             none
             hidden
@@ -68,6 +70,7 @@ function Footer() {
               pt-2
               opacity-50
             `}>Projekter</p>
+
             <div
               className={`
                 grid
@@ -97,6 +100,7 @@ function Footer() {
               pt-2
               opacity-50
             `}>Links</p>
+
             <div className={`
               grid
               w-[6rem]
@@ -114,6 +118,7 @@ function Footer() {
             </div>
           </div>
         </div>
+
         <p className={`
           pt-12
           text-center

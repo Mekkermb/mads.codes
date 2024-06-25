@@ -22,12 +22,14 @@ function Header() {
           font-bold
           uppercase
         `}>mads.codes</span>
+
         <span className={`
           text-xs
           capitalize
           opacity-50
         `}>webudvikler</span>
       </Link>
+
       <nav>
         <Link
           href="/projects"

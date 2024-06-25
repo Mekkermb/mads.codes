@@ -22,6 +22,7 @@ function RootLayout({ children }) {
           <main>{children}</main>
           <Footer />
         </div>
+
         <Analytics />
       </body>
     </html>

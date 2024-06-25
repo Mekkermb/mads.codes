@@ -60,6 +60,7 @@ function Home() {
                   >
                     Hej der! <br /> Mit navn er Mads
                   </h1>
+
                   <p className={`
                     text-balance
                     text-center
@@ -69,6 +70,7 @@ function Home() {
                     ting med kode
                   </p>
                 </div>
+
                 <div>
                   <div
                     className={`
@@ -101,6 +103,7 @@ function Home() {
                   priority="high"
                   className="w-72"
                 ></Image>
+
                 <ArcherElementWrapper
                   id="intro"
                   relations={[
@@ -128,6 +131,7 @@ function Home() {
                     Introduktion
                   </h2>
                 </ArcherElementWrapper>
+
                 <ArcherElementWrapper
                   id="intro-text"
                   relations={[

@@ -34,7 +34,6 @@ function Home() {
               mb-4
               w-fit
               text-balance
-              font-mono
               text-6xl
               font-bold
               leading-tight

@@ -8,7 +8,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-nunito-sans)"],
-        mono: ["var(--font-monaspace-neon)"],
       },
     },
   },

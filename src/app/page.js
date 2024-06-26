@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-import Story from "@/components/Story";
-
 import Projects from "@/components/Projects/Projects";
 import { Terminal } from "react-feather";
 
@@ -97,31 +95,10 @@ function Home() {
                 priority="high"
                 className={`w-72`}
               ></Image>
-
-              <h2 className={`
-                mx-auto
-                mb-16
-                w-fit
-                bg-neutral-400
-                px-4
-                py-2
-                text-5xl
-                font-thin
-                italic
-              `}
-              >
-                Introduktion
-              </h2>
-
-              <p className={`text-2xl`}>
-                Min første oplevelse med kodning var midt i min IT-supporter
-                praktikforløb.
-              </p>
             </div>
           </article>
         </section>
 
-        <Story />
         <Projects />
       </div>
     </>

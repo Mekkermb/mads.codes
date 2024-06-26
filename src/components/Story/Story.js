@@ -1,7 +1,5 @@
 import React from "react";
 
-import ArcherElementWrapper from "@/components/ArcherElementWrapper";
-
 function Story() {
   return (
     <>
@@ -23,44 +21,24 @@ function Story() {
           gap-16
           lg:min-h-svh
         `}>
-          <ArcherElementWrapper id="start-dream"
-            relations={[
-              {
-                targetId: "start-dream-text",
-                targetAnchor: "top",
-                sourceAnchor: "bottom",
-              },
-            ]}
+          <h2 className={`
+            mx-auto
+            w-fit
+            bg-neutral-400
+            px-4
+            py-2
+            text-5xl
+            font-thin
+            italic
+          `}
           >
-            <h2 className={`
-              mx-auto
-              w-fit
-              bg-neutral-400
-              px-4
-              py-2
-              text-5xl
-              font-thin
-              italic
-            `}
-            >
-              Starten på en drøm
-            </h2>
-          </ArcherElementWrapper>
+            Starten på en drøm
+          </h2>
 
-          <ArcherElementWrapper id="start-dream-text"
-            relations={[
-              {
-                targetId: "first-website",
-                targetAnchor: "top",
-                sourceAnchor: "bottom",
-              },
-            ]}
-          >
-            <p className={`text-2xl`}>
-              Jeg havde tid i overskud og tænkte derfor på at starte på en drøm,
-              jeg længe havde haft: nemlig at kode min egen hjemmeside!
-            </p>
-          </ArcherElementWrapper>
+          <p className={`text-2xl`}>
+            Jeg havde tid i overskud og tænkte derfor på at starte på en drøm,
+            jeg længe havde haft: nemlig at kode min egen hjemmeside!
+          </p>
         </div>
 
         <div className={`
@@ -70,45 +48,25 @@ function Story() {
           gap-16
           lg:min-h-svh
         `}>
-          <ArcherElementWrapper id="first-website"
-            relations={[
-              {
-                targetId: "first-website-text",
-                targetAnchor: "top",
-                sourceAnchor: "bottom",
-              },
-            ]}
+          <h2 className={`
+            mx-auto
+            w-fit
+            bg-neutral-400
+            px-4
+            py-2
+            text-5xl
+            font-thin
+            italic
+          `}
           >
-            <h2 className={`
-              mx-auto
-              w-fit
-              bg-neutral-400
-              px-4
-              py-2
-              text-5xl
-              font-thin
-              italic
-            `}
-            >
-              Den første hjemmeside
-            </h2>
-          </ArcherElementWrapper>
+            Den første hjemmeside
+          </h2>
 
-          <ArcherElementWrapper id="first-website-text"
-            relations={[
-              {
-                targetId: "education-development",
-                targetAnchor: "top",
-                sourceAnchor: "bottom",
-              },
-            ]}
-          >
-            <p className={`text-2xl`}>
-              Den blev ikke noget exceptionelt, men jeg var stolt af den, for nu
-              havde jeg et sted, hvor jeg kunne vise alle mine interesser og
-              sjove eksperimenter, jeg var i gang med.
-            </p>
-          </ArcherElementWrapper>
+          <p className={`text-2xl`}>
+            Den blev ikke noget exceptionelt, men jeg var stolt af den, for nu
+            havde jeg et sted, hvor jeg kunne vise alle mine interesser og sjove
+            eksperimenter, jeg var i gang med.
+          </p>
         </div>
 
         <div className={`
@@ -118,44 +76,25 @@ function Story() {
           gap-16
           lg:min-h-svh
         `}>
-          <ArcherElementWrapper id="education-development"
-            relations={[
-              {
-                targetId: "education-development-text",
-                targetAnchor: "top",
-                sourceAnchor: "bottom",
-              },
-            ]}
+          <h2 className={`
+            mx-auto
+            w-fit
+            bg-neutral-400
+            px-4
+            py-2
+            text-5xl
+            font-thin
+            italic
+          `}
           >
-            <h2 className={`
-              mx-auto
-              w-fit
-              bg-neutral-400
-              px-4
-              py-2
-              text-5xl
-              font-thin
-              italic
-            `}
-            >
-              Uddannelse og udvikling
-            </h2>
-          </ArcherElementWrapper>
+            Uddannelse og udvikling
+          </h2>
+          relations=
 
-          <ArcherElementWrapper id="education-development-text"
-            relations={[
-              {
-                targetId: "future-goals",
-                targetAnchor: "top",
-                sourceAnchor: "bottom",
-              },
-            ]}
-          >
-            <p className={`text-2xl`}>
-              Siden da har jeg taget uddannelsen som webudvikler og fortsat med
-              at forbedre mine færdigheder og lære nye teknologier.
-            </p>
-          </ArcherElementWrapper>
+          <p className={`text-2xl`}>
+            Siden da har jeg taget uddannelsen som webudvikler og fortsat med at
+            forbedre mine færdigheder og lære nye teknologier.
+          </p>
         </div>
 
         <div className={`
@@ -165,36 +104,24 @@ function Story() {
           gap-16
           lg:min-h-svh
         `}>
-          <ArcherElementWrapper id="future-goals"
-            relations={[
-              {
-                targetId: "future-goals-text",
-                targetAnchor: "top",
-                sourceAnchor: "bottom",
-              },
-            ]}
+          <h2 className={`
+            mx-auto
+            w-fit
+            bg-neutral-400
+            px-4
+            py-2
+            text-5xl
+            font-thin
+            italic
+          `}
           >
-            <h2 className={`
-              mx-auto
-              w-fit
-              bg-neutral-400
-              px-4
-              py-2
-              text-5xl
-              font-thin
-              italic
-            `}
-            >
-              Fremtidige mål
-            </h2>
-          </ArcherElementWrapper>
+            Fremtidige mål
+          </h2>
 
-          <ArcherElementWrapper id="future-goals-text">
-            <p className={`text-2xl`}>
-              Jeg leder nu efter en fuldtidsstilling eller praktikplads, hvor
-              jeg kan hjælpe en virksomhed med at få deres mål til nye højder!
-            </p>
-          </ArcherElementWrapper>
+          <p className={`text-2xl`}>
+            Jeg leder nu efter en fuldtidsstilling eller praktikplads, hvor jeg
+            kan hjælpe en virksomhed med at få deres mål til nye højder!
+          </p>
         </div>
       </section>
     </>

@@ -6,11 +6,14 @@ function Logo() {
   return (
     <Link className={`
       flex
+      w-fit
       flex-col
       font-bold
       uppercase
       leading-none
-    `} href="/">
+    `}
+      href="/"
+    >
       <p>
         <span className={`
           inline-flex

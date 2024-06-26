@@ -19,10 +19,9 @@ function Footer() {
           mb-12
           flex
           justify-center
-          lg:mb-0
-          lg:flex-col
-          lg:justify-between
-          md:items-start
+          md:mb-0
+          md:flex-col
+          md:justify-between
         `}
         >
           <Logo />

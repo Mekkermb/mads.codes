@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Logo from "@/components/Logo";
 
 function Footer() {
   return (
@@ -15,33 +16,16 @@ function Footer() {
       `}
       >
         <div className={`
+          mb-12
           flex
-          flex-col
-          justify-between
+          justify-center
+          lg:mb-0
+          lg:flex-col
+          lg:justify-between
           md:items-start
-        `}>
-          <Link href="/"
-            className={`
-              flex
-              flex-col
-              pb-9
-              text-center
-              leading-none
-              md:pb-0
-              md:text-left
-            `}
-          >
-            <span className={`
-              font-bold
-              uppercase
-            `}>mads.codes</span>
-
-            <span className={`
-              text-xs
-              capitalize
-              opacity-50
-            `}>webudvikler</span>
-          </Link>
+        `}
+        >
+          <Logo />
 
           <p className={`
             none

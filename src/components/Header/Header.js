@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Logo from "@/components/Logo";
 
 function Header() {
   return (
@@ -10,28 +10,7 @@ function Header() {
       justify-between
       py-6
     `}>
-      <Link href="/" className={`
-        flex
-        flex-col
-        leading-none
-      `}>
-        <span className={`
-          font-bold
-          uppercase
-        `}>mads.codes</span>
-
-        <span className={`
-          text-xs
-          capitalize
-          opacity-50
-        `}>webudvikler</span>
-      </Link>
-
-      <nav>
-        <Link href="/projects" className={`font-bold`}>
-          Projekter
-        </Link>
-      </nav>
+      <Logo />
     </header>
   );
 }

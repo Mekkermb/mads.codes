@@ -5,7 +5,12 @@ module.exports = {
 
   safelist: ["bg-lime-200", "bg-amber-200"], // TODO Temp fix for JIT mode
   theme: {
-    extend: { fontFamily: { sans: ["var(--font-nunito-sans)"] } },
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-nunito-sans)"],
+        mono: ["var(--font-monaspace-neon)"],
+      },
+    },
   },
   plugins: [],
 };

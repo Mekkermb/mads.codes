@@ -50,7 +50,7 @@ function Home() {
                   w-fit
                   text-balance
                   text-6xl
-                  font-semibold
+                  font-bold
                   leading-tight
                   tracking-tight
                 `}
@@ -79,20 +79,6 @@ function Home() {
                   Jeg er en passioneret introvert, der godt kan lide at skabe
                   ting med kode
                 </p>
-              </div>
-
-              <div>
-                <div className={`
-                  flex
-                  aspect-video
-                  w-72
-                  items-center
-                  justify-center
-                  bg-neutral-400
-                `}
-                >
-                  <p>Nyeste projekt</p>
-                </div>
               </div>
             </div>
           </article>

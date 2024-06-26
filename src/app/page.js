@@ -7,100 +7,68 @@ import { Terminal } from "react-feather";
 function Home() {
   return (
     <>
-      <div className={`
-        grid
-        justify-items-center
-        gap-48
-        lg:grid-cols-2
-        lg:gap-0
+      <section className={`
+        container
+        flex
+        min-h-[calc(100svh-80px)]
+        flex-col
+        items-center
+        justify-center
+        text-center
       `}
       >
-        <section className={`
-          container
-          col-span-full
-          mt-20
+        <article className={`
           flex
-          min-h-[calc(100svh-80px-5rem)]
           flex-col
-          gap-48
-          text-center
-          lg:flex-row
-          lg:gap-0
-          lg:pb-20
-        `}
-        >
-          <article>
-            <div className={`
-              flex
-              flex-col
-              items-center
-              gap-16
-            `}>
-              <div className={`
-                flex
-                flex-col
-                items-center
-                justify-center
-              `}>
-                <h1 className={`
-                  relative
-                  mb-4
-                  w-fit
-                  text-balance
-                  text-6xl
-                  font-bold
-                  leading-tight
-                  tracking-tight
-                `}
-                >
-                  <span className={`
-                    absolute
-                    bottom-0
-                    left-0
-                    -translate-x-full
-                    select-none
-                    text-3xl
-                  `}
-                  >
-                    <Terminal />
-                  </span>
-                  Hej der!
-                </h1>
+          items-center
+          gap-16
+        `}>
+          <div className={`
+            flex
+            flex-col
+            items-center
+            justify-center
+          `}>
+            <h1 className={`
+              relative
+              mb-4
+              w-fit
+              text-balance
+              text-6xl
+              font-bold
+              leading-tight
+              tracking-tight
+            `}
+            >
+              <span className={`
+                absolute
+                bottom-0
+                left-0
+                -translate-x-full
+                select-none
+                text-3xl
+              `}
+              >
+                <Terminal />
+              </span>
+              Hej der!
+            </h1>
 
-                <p className={`
-                  text-balance
-                  text-2xl
-                  leading-normal
-                  tracking-tight
-                `}
-                >
-                  Jeg er en passioneret introvert, der godt kan lide at skabe
-                  ting med kode
-                </p>
-              </div>
-            </div>
-          </article>
+            <p className={`
+              text-balance
+              text-2xl
+              leading-normal
+              tracking-tight
+            `}
+            >
+              Jeg er en passioneret introvert, der godt kan lide at skabe ting
+              med kode
+            </p>
+          </div>
+        </article>
+      </section>
 
-          <article className={`lg:place-self-end`}>
-            <div className={`
-              flex
-              flex-col
-              items-center
-              justify-center
-            `}>
-              <Image src="https://8xsca0xnzcvircvx.public.blob.vercel-storage.com/img/mascot-6OGja7b0DIZyo3c85h1627IC2qnHZm.png"
-                alt="Billede af min mascot"
-                width={800}
-                height={800}
-                priority="high"
-                className={`w-72`}
-              ></Image>
-            </div>
-          </article>
-        </section>
-
-        <Projects />
-      </div>
+      <Projects />
     </>
   );
 }

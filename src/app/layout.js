@@ -4,6 +4,7 @@ import "./styles.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { nunitoSans } from "@/constants";
 
 export const metadata = {
   title: "Mads Codes",
@@ -12,7 +13,10 @@ export const metadata = {
 
 function RootLayout({ children }) {
   return (
-    <html lang="en" className={`antialiased`}>
+    <html lang="en" className={`
+      antialiased
+      ${nunitoSans.variable}
+    `}>
       <body>
         <div className={`isolate`}>
           <Header />

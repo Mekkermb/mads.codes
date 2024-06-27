@@ -3,14 +3,40 @@
 @tailwind utilities;
 
 @layer base {
-  h1,
-  h2,
-  h3 {
-    color: #555555;
-  }
 }
 
 @layer components {
+  :root {
+    --text-50: 225 15% 95%;
+    --text-100: 231 14% 90%;
+    --text-200: 229 16% 80%;
+    --text-300: 232 15% 70%;
+    --text-400: 232 15% 60%;
+    --text-500: 231 15% 50%;
+    --text-600: 232 15% 40%;
+    --text-700: 232 15% 30%;
+    --text-800: 229 16% 20%;
+    --text-900: 231 14% 10%;
+    --text-950: 240 15% 5%;
+
+    --background-0: 0 0% 100%;
+    --background-50: 0 0% 95%;
+    --background-100: 0 0% 90%;
+    --background-200: 0 0% 80%;
+    --background-300: 0 0% 70%;
+    --background-400: 0 0% 60%;
+    --background-500: 0 0% 50%;
+    --background-600: 0 0% 40%;
+    --background-700: 0 0% 30%;
+    --background-800: 0 0% 20%;
+    --background-900: 0 0% 10%;
+    --background-950: 0 0% 5%;
+
+    --primary: 180 100% 82%;
+    --secondary: 270 100% 84%;
+    --accent: 231 15% 18%;
+  }
+
   .container {
     margin-left: auto;
     margin-right: auto;

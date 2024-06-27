@@ -17,7 +17,10 @@ function RootLayout({ children }) {
       antialiased
       ${nunitoSans.variable}
     `}>
-      <body>
+      <body className={`
+        bg-background
+        text-text
+      `}>
         <div className={`isolate`}>
           <Header />
           <main>{children}</main>

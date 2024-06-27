@@ -7,7 +7,7 @@ function Footer() {
     <footer className={`
       container
       mt-36
-      bg-background-50
+      bg-primary-50
     `}>
       <div className={`
         flex

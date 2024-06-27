@@ -27,8 +27,8 @@ function Logo() {
               inline-block
               h-1
               w-1
-              fill-cyan-400
-              text-cyan-400
+              fill-primary
+              text-primary
             `}
             />
           </span>

@@ -4,14 +4,17 @@ import Logo from "@/components/Logo";
 
 function Footer() {
   return (
-    <footer className={`container`}>
+    <footer className={`
+      container
+      mt-36
+      bg-background-50
+    `}>
       <div className={`
-        mt-20
         flex
-        min-h-[25svh]
+        min-h-[50svh]
         flex-col
         justify-between
-        py-6
+        py-8
         md:flex-row
       `}
       >

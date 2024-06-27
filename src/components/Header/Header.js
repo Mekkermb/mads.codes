@@ -5,12 +5,16 @@ function Header() {
   return (
     <header className={`
       container
-      flex
-      items-center
-      justify-between
-      py-6
+      bg-primary-50
     `}>
-      <Logo />
+      <div className={`
+        flex
+        items-center
+        justify-between
+        py-8
+      `}>
+        <Logo />
+      </div>
     </header>
   );
 }

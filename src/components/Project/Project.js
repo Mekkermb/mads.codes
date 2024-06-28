@@ -14,44 +14,42 @@ const Project = ({ project }) => {
   return (
     <article className={`
       flex
-      w-full
       flex-col
-      gap-32
-    `}>
-      <div className={`
-        relative
-        h-40
-        w-full
-        rounded-xl
-        bg-secondary-50
-      `}>
-        <div className={`
-          absolute
-          inset-0
-          flex
-          items-center
-          justify-center
-          px-8
-          py-4
-        `}
-        >
+      gap-12
+      rounded-xl
+      bg-gradient-to-b
+      from-secondary-50
+      to-secondary-100
+      p-8
+      shadow-accent
+      drop-shadow-lg
+      lg:flex-row
+    `}
+    >
+      <div>
+        <div className={`flex`}>
           {illustrations.map((illustration, index) => (
             <picture key={index}
               className={`
-                relative
                 ${
-                index === 0 ? `
-                  z-10
-                  w-32
-                  translate-x-6
-                ` : `
-                  w-64
-                  -translate-x-6
-                `
+                index === 0
+                  ? `
+                    z-10
+                    flex-[50%]
+                    translate-x-3
+                  `
+                  : `
+                    flex-[100%]
+                    -translate-x-3
+                  `
               }
               `}
             >
-              <Image src={illustration}
+              <Image className={`
+                h-full
+                object-contain
+              `}
+                src={illustration}
                 width={illustration.width}
                 height={illustration.height}
                 alt={description}
@@ -63,7 +61,7 @@ const Project = ({ project }) => {
 
       <div className={`
         flex
-        h-52
+        flex-1
         flex-col
         gap-4
       `}>
@@ -93,6 +91,8 @@ const Project = ({ project }) => {
           h-full
           flex-col
           items-center
+          gap-4
+          text-balance
         `}>
           <p>{description}</p>
 

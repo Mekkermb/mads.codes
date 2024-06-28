@@ -11,10 +11,9 @@ async function Projects() {
       grid
       grid-cols-1
       justify-items-center
-      gap-48
+      gap-16
       text-center
-      md:grid-cols-2
-      md:gap-16
+      sm:grid-cols-2
     `}
     >
       {rows.map((project) => (

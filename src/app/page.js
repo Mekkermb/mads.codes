@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import Projects from "@/components/Projects/Projects";
 import { Terminal } from "react-feather";
@@ -61,11 +60,11 @@ function Home() {
               tracking-tight
             `}
             >
-              Jeg er en uddannet webudvikler med en passion for at skabe
+              Jeg er nyuddannet webudvikler med en passion for at skabe
               meningsfulde web løsninger.
               <br />
               <br />
-              Gennem mine år som webudvikler har jeg skabt nydelige og
+              Gennem min uddannelse som webudvikler har jeg skabt nydelige og
               mindeværdige løsninger gennem mine projekter.
               <br />
               <br />
@@ -88,7 +87,7 @@ function Home() {
         <h2 className={`
           text-4xl
           font-extrabold
-        `}>Hvad jeg arbejder på</h2>
+        `}>Hvad jeg har arbejdet på</h2>
 
         <p>
           Jeg kan godt lide at være aktiv og har altid gang i nye projekter.

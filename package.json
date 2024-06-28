@@ -1,7 +1,7 @@
 {
   "name": "mads.codes",
-  "version": "0.3.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "dev:turbo": "next dev --turbo",

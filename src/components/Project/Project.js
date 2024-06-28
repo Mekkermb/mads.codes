@@ -6,25 +6,33 @@ import Link from "next/link";
 import { ChevronRight } from "react-feather";
 
 const Project = ({ project }) => {
-  const { name, description, illustrations, live_project_link } =
-    project; // Destructure the project object
+  const { name, description, illustrations, live_project_link } = project; // Destructure the project object
 
   const [isHovering, setIsHovering] = React.useState(false);
 
   return (
-    <article className={`
+    <motion.article className={`
       flex
       flex-col
       gap-12
       rounded-xl
-      bg-gradient-to-b
-      from-secondary-50
-      to-secondary-100
       p-8
       shadow-accent
       drop-shadow-lg
       lg:flex-row
     `}
+      style={{
+        background: `linear-gradient(to bottom, hsl(var(--gradient-start)), hsl(var(--gradient-end)))`,
+      }}
+      animate={{
+        "--gradient-start": ["var(--secondary-100)", "var(--secondary-50)"],
+        "--gradient-end": ["var(--secondary-200)", "var(--secondary-100)"],
+        transition: {
+          duration: "10",
+          repeat: Infinity,
+          repeatType: "mirror",
+        },
+      }}
     >
       <div>
         <div className={`flex`}>
@@ -120,8 +128,6 @@ const Project = ({ project }) => {
 
             <motion.span className={`
               absolute
-              bottom-0
-              top-0
               ${isHovering ? `-right-[28px]` : `-right-[24px]`}
             `}
               layout
@@ -129,14 +135,15 @@ const Project = ({ project }) => {
                 type: "spring",
                 stiffness: 500,
                 damping: 40,
+                restDelta: 0.001,
               }}
             >
-              <ChevronRight />
+              <ChevronRight className="text-secondary-400" />
             </motion.span>
           </motion.div>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 

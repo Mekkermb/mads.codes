@@ -95,11 +95,13 @@ function Home() {
           font-extrabold
         `}>Hvad jeg har arbejdet på</h2>
 
-        <p>
-          Jeg kan godt lide at være aktiv og har altid gang i nye projekter.
-          <br />
-          Her kan du se nogle af de projekter, som jeg har arbejdet på.
-        </p>
+        <div className="">
+          <p>
+            Jeg kan godt lide at være aktiv og har altid gang i nye projekter.
+          </p>
+
+          <p>Her kan du se nogle af de projekter, som jeg har arbejdet på.</p>
+        </div>
       </div>
 
       <Projects />

@@ -10,11 +10,9 @@ function Home() {
       <section className={`
         container
         flex
-        min-h-[calc(100svh-80px)]
         flex-col
         items-center
         justify-center
-        text-center
       `}
       >
         <article className={`
@@ -28,11 +26,12 @@ function Home() {
             flex-col
             items-center
             justify-center
-          `}>
+            text-center
+          `}
+          >
             <h1 className={`
               relative
-              mb-4
-              w-fit
+              mb-8
               text-balance
               text-6xl
               font-bold
@@ -55,18 +54,48 @@ function Home() {
             </h1>
 
             <p className={`
+              max-w-xl
               text-balance
-              text-2xl
+              text-base
               leading-normal
               tracking-tight
             `}
             >
-              Jeg er en passioneret introvert, der godt kan lide at skabe ting
-              med kode
+              Jeg er en uddannet webudvikler med en passion for at skabe
+              meningsfulde web løsninger.
+              <br />
+              <br />
+              Gennem mine år som webudvikler har jeg skabt nydelige og
+              mindeværdige løsninger gennem mine projekter.
+              <br />
+              <br />
+              Gennem disse erfaringer har jeg haft mulighed for at skabe
+              produkter, der ikke kun er brugervenlige, men også skrevet i kode,
+              der er nem at vedligeholde og forstå.
             </p>
           </div>
         </article>
       </section>
+
+      <div className={`
+        container
+        flex
+        flex-col
+        gap-4
+        text-balance
+        text-center
+      `}>
+        <h2 className={`
+          text-4xl
+          font-extrabold
+        `}>Hvad jeg arbejder på</h2>
+
+        <p>
+          Jeg kan godt lide at være aktiv og har altid gang i nye projekter.
+          <br />
+          Her kan du se nogle af de projekter, som jeg har arbejdet på.
+        </p>
+      </div>
 
       <Projects />
     </>

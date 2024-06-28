@@ -23,7 +23,12 @@ function RootLayout({ children }) {
       `}>
         <div className={`isolate`}>
           <Header />
-          <main>{children}</main>
+
+          <main className={`
+            grid
+            gap-y-36
+          `}>{children}</main>
+
           <Footer />
         </div>
 

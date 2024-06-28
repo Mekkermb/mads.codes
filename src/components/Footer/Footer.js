@@ -1,20 +1,22 @@
 import Link from "next/link";
 import React from "react";
 import Logo from "@/components/Logo";
+import { Tool } from "react-feather";
 
 function Footer() {
   return (
     <footer className={`
-      container
       mt-36
       bg-primary-50
     `}>
       <div className={`
+        container
         flex
-        min-h-[50svh]
+        min-h-80
         flex-col
         justify-between
         py-8
+        md:min-h-56
         md:flex-row
       `}
       >
@@ -60,15 +62,25 @@ function Footer() {
               md:grid-cols-2
             `}
             >
-              <div className={`
-                flex
-                gap-0.5
-              `}>
-                <Link href="/">
-                  cmd-gen
-                  {/* TODO: Implement a tooltip component when hovered over explains that it's under construction. */}
-                  <span>*</span>
-                </Link>{" "}
+              <div className={`flex`}>
+                <div className={`
+                  flex
+                  shrink-0
+                  items-center
+                  gap-1
+                `}>
+                  <Link href="/">
+                    cmd-gen{" "}
+                    {/* TODO: Implement a tooltip component when hovered over explains that it's under construction. */}
+                  </Link>
+
+                  <span>
+                    <Tool className={`
+                      h-4
+                      w-4
+                    `} />
+                  </span>
+                </div>
               </div>
             </div>
           </div>

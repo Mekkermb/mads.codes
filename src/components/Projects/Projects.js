@@ -8,10 +8,11 @@ async function Projects() {
   return (
     <section className={`
       container
-      col-span-full
       grid
       grid-cols-1
+      justify-items-center
       gap-48
+      text-center
       md:grid-cols-2
       md:gap-16
     `}

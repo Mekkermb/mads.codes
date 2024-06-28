@@ -14,6 +14,7 @@ const Project = ({ project }) => {
   return (
     <article className={`
       flex
+      w-full
       flex-col
       gap-32
     `}>
@@ -21,7 +22,8 @@ const Project = ({ project }) => {
         relative
         h-40
         w-full
-        bg-${properties.color}
+        rounded-xl
+        bg-secondary-50
       `}>
         <div className={`
           absolute
@@ -63,12 +65,11 @@ const Project = ({ project }) => {
         flex
         h-52
         flex-col
-        items-start
         gap-4
       `}>
         <motion.h2 className={`
           text-4xl
-          font-bold
+          font-extrabold
         `}
           layout
           initial={{
@@ -88,18 +89,23 @@ const Project = ({ project }) => {
         </motion.h2>
 
         <div className={`
-          inline-flex
+          flex
           h-full
           flex-col
+          items-center
         `}>
           <p>{description}</p>
 
           {/* TODO: Refactor to a LinkButton Component */}
-          <div className={`
+          <motion.div className={`
+            relative
             mt-auto
             flex
-            ${isHovering ? `gap-2` : `gap-0`}
-          `}>
+            w-fit
+            items-center
+            justify-center
+          `}
+          >
             <Link className={`
               font-bold
               uppercase
@@ -112,7 +118,12 @@ const Project = ({ project }) => {
               Se projekt
             </Link>
 
-            <motion.span className={`select-none`}
+            <motion.span className={`
+              absolute
+              bottom-0
+              top-0
+              ${isHovering ? `-right-[28px]` : `-right-[24px]`}
+            `}
               layout
               transition={{
                 type: "spring",
@@ -122,7 +133,7 @@ const Project = ({ project }) => {
             >
               <ChevronRight />
             </motion.span>
-          </div>
+          </motion.div>
         </div>
       </div>
     </article>

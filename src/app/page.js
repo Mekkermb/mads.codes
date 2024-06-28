@@ -52,26 +52,32 @@ function Home() {
               Hej der!
             </h1>
 
-            <p className={`
+            <div className={`
+              flex
               max-w-xl
+              flex-col
               text-balance
               text-base
               leading-normal
               tracking-tight
             `}
             >
-              Jeg er nyuddannet webudvikler med en passion for at skabe
-              meningsfulde web løsninger.
-              <br />
-              <br />
-              Gennem min uddannelse som webudvikler har jeg skabt nydelige og
-              mindeværdige løsninger gennem mine projekter.
-              <br />
-              <br />
-              Gennem disse erfaringer har jeg haft mulighed for at skabe
-              produkter, der ikke kun er brugervenlige, men også skrevet i kode,
-              der er nem at vedligeholde og forstå.
-            </p>
+              <p>
+                Jeg er nyuddannet webudvikler med en passion for at skabe
+                meningsfulde web løsninger.
+              </p>
+
+              <p>
+                Gennem min uddannelse som webudvikler har jeg skabt nydelige og
+                mindeværdige løsninger gennem mine projekter.
+              </p>
+
+              <p>
+                Gennem disse erfaringer har jeg haft mulighed for at skabe
+                produkter, der ikke kun er brugervenlige, men også skrevet i
+                kode, der er nem at vedligeholde og forstå.
+              </p>
+            </div>
           </div>
         </article>
       </section>

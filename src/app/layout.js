@@ -26,7 +26,7 @@ function RootLayout({ children }) {
 
           <main className={`
             grid
-            gap-y-36
+            gap-y-32
           `}>{children}</main>
 
           <Footer />

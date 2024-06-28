@@ -19,7 +19,7 @@ const Project = ({ project }) => {
       p-8
       shadow-accent
       drop-shadow-lg
-      lg:flex-row
+      2xl:flex-row
     `}
       style={{
         background: `linear-gradient(to bottom, hsl(var(--gradient-start)), hsl(var(--gradient-end)))`,
@@ -28,13 +28,13 @@ const Project = ({ project }) => {
         "--gradient-start": ["var(--secondary-100)", "var(--secondary-50)"],
         "--gradient-end": ["var(--secondary-200)", "var(--secondary-100)"],
         transition: {
-          duration: "10",
+          duration: "5",
           repeat: Infinity,
           repeatType: "mirror",
         },
       }}
     >
-      <div>
+      <div className="lg:flex-[100%]">
         <div className={`flex`}>
           {illustrations.map((illustration, index) => (
             <picture key={index}
@@ -69,9 +69,10 @@ const Project = ({ project }) => {
 
       <div className={`
         flex
-        flex-1
+        h-full
         flex-col
         gap-4
+        lg:flex-[100%]
       `}>
         <motion.h2 className={`
           text-4xl

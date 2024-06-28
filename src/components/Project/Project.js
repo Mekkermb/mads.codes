@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ChevronRight } from "react-feather";
 
 const Project = ({ project }) => {
-  const { name, description, illustrations, properties, live_project_link } =
+  const { name, description, illustrations, live_project_link } =
     project; // Destructure the project object
 
   const [isHovering, setIsHovering] = React.useState(false);

@@ -1,9 +1,9 @@
 import React from "react";
-import { DAL } from "@/server/data-access-layer";
 import Project from "@/components/Project";
+import { getProjects } from "@/db/queries";
 
 async function Projects() {
-  const { rows } = await DAL.query.getProjects();
+  const projects = await getProjects();
 
   return (
     <section className={`
@@ -16,7 +16,7 @@ async function Projects() {
       sm:grid-cols-2
     `}
     >
-      {rows.map((project) => (
+      {projects.map((project) => (
         <Project key={project.id} project={project}></Project>
       ))}
     </section>

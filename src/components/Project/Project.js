@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ChevronRight } from "react-feather";
 
 const Project = ({ project }) => {
-  const { name, description, illustrations, live_project_link } = project; // Destructure the project object
+  const { name, description, illustrations, liveProjectLink } = project; // Destructure the project object
 
   const [isHovering, setIsHovering] = React.useState(false);
 
@@ -120,7 +120,7 @@ const Project = ({ project }) => {
               uppercase
             `}
               target="_blank"
-              href={live_project_link}
+              href={liveProjectLink}
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
             >
